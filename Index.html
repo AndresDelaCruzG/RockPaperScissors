@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Piedra Papel o Tijera</title>
+	<link rel="icon" href="imagenes/rockpaperscissors.png">
+	<link rel="stylesheet" href="Style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<h1>JUEGO PIEDRA PAPEL Y TIJERAS</h1>
+	</header>
+	<div class="container">
+		<div class="score-container">
+			<span class="user">Jugador</span>
+			<span id="score"></span>
+			<span class="com">Computadora</span>
+		</div>
+		<div class="buttons">
+			<button id="paper" class="bn" onclick="game(this.value)" value="paper"><img src="imagenes/papel.png"
+					width="100px" height="90px"></button>
+			<button id="rock" class="bn" onclick="game(this.value)" value="rock"><img src="imagenes/piedra.png"
+					width="100px" height="90px"></button>
+			<button id="scissors" class="bn" onclick="game(this.value)" value="scissors"><img src="imagenes/tijeras.png"
+					width="100px" height="90px"></button>
+		</div>
+		<div id="challenge">
+			<div id="you">
+				<div id="YourObject"></div>
+				<div class="who">Jugador</div>
+			</div>
+			<div id="result">
+				<p id="who">
+				<p>
+			</div>
+			<div id="com">
+				<div id="ComObject"></div>
+				<div class="who">Computadora</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="JavaScript.js"></script>
+</body>
+
+</html>
